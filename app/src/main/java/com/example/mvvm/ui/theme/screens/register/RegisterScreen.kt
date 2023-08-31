@@ -17,6 +17,8 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.example.mvvm.navigation.ROUTE_LOGIN
+import com.example.mvvm.navigation.ROUTE_REGISTER
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -50,12 +52,20 @@ fun Register(navController: NavHostController) {
                 pass=it
 
             })
-        Button(onClick = { /*TODO*/ })
+        Button(onClick = {
+            navController.navigate(ROUTE_LOGIN)
+        }
+        )
         {
             Text(text = "LOGIN")
 
         }
-        Button(onClick = { /*TODO*/ })
+
+
+        Button(onClick = {
+            navController.navigate(ROUTE_REGISTER)
+        }
+        )
         {
             Text(text = "No account ? Register Here")
 
