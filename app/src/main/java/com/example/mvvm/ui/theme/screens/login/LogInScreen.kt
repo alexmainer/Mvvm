@@ -32,6 +32,7 @@ fun Login(navController: NavHostController){
         horizontalAlignment = Alignment.CenterHorizontally)
     {
       Text(text = "LogIn !!")
+      Text(text = "Here!!")  
       
       OutlinedTextField(
           value = email,
